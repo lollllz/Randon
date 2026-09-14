@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="vl-swing-title">
+  <title id="vl-swing-title">A swing has a natural beat; on-time pushes grow the arc</title>
+  <rect width="360" height="220" fill="#F7F4EF"/>
+
+  <g class="SwingStill" data-art="beat">
+    <line x1="64" y1="28" x2="296" y2="28" stroke="#E6E0D6" stroke-width="3"/>
+    <g class="vl-swing-still SwingStill">
+      <line x1="180" y1="28" x2="180" y2="128" stroke="#3D8B84" stroke-width="2"/>
+      <rect x="164" y="128" width="32" height="18" rx="4" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6"/>
+    </g>
+    <text x="204" y="132" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">Natural beat</text>
+    <line x1="70" y1="176" x2="290" y2="176" stroke="#E6E0D6" stroke-width="2"/>
+    <circle cx="180" cy="176" r="3.5" fill="#3D8B84"/>
+    <text x="154" y="198" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">return</text>
+  </g>
+
+  <g class="SwingStill" data-art="mismatch">
+    <line x1="64" y1="28" x2="296" y2="28" stroke="#E6E0D6" stroke-width="3"/>
+    <g class="vl-swing-still" transform="rotate(-7 180 28)">
+      <line x1="180" y1="28" x2="180" y2="128" stroke="#3D8B84" stroke-width="2"/>
+      <rect x="164" y="128" width="32" height="18" rx="4" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6"/>
+    </g>
+    <path d="M84 78 l16 10 M108 56 l10 14 M248 60 l-12 12 M272 92 l-16 6 M96 140 l18 -4" fill="none" stroke="#6F6A64" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+    <text x="72" y="72" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">off the beat</text>
+    <text x="214" y="54" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">cancel</text>
+  </g>
+
+  <g data-art="onbeat">
+    <line x1="64" y1="28" x2="296" y2="28" stroke="#E6E0D6" stroke-width="3"/>
+    <g class="vl-swing vl-swing-wide vl-pivot-center">
+      <line x1="180" y1="28" x2="180" y2="128" stroke="#3D8B84" stroke-width="2"/>
+      <g class="vl-seat">
+        <rect x="164" y="128" width="32" height="18" rx="4" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6"/>
+        <path class="vl-onbeat" d="M196 136 C 210 128, 222 120, 234 112" fill="none" stroke="#C9893A" stroke-width="3" stroke-linecap="round"/>
+        <circle class="vl-onbeat" cx="196" cy="137" r="3.2" fill="#C9893A"/>
+      </g>
+    </g>
+    <text x="214" y="84" fill="#C9893A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">on the beat</text>
+  </g>
+
+  <g data-art="split">
+    <line x1="72" y1="36" x2="168" y2="36" stroke="#E6E0D6" stroke-width="2"/>
+    <g class="vl-swing vl-swing-wide vl-pivot-left">
+      <line x1="120" y1="36" x2="120" y2="128" stroke="#3D8B84" stroke-width="1.8"/>
+      <g class="vl-seat">
+        <rect x="108" y="128" width="24" height="14" rx="3" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.4"/>
+        <path class="vl-onbeat" d="M132 135 C 142 128, 152 122, 162 116" fill="none" stroke="#C9893A" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+    </g>
+    <text x="86" y="158" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">matching</text>
+    <line x1="216" y1="36" x2="312" y2="36" stroke="#E6E0D6" stroke-width="2"/>
+    <g class="SwingStill vl-swing-still">
+      <line x1="264" y1="36" x2="264" y2="88" stroke="#3D8B84" stroke-width="1.8"/>
+      <rect x="252" y="88" width="24" height="14" rx="3" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.4"/>
+      <path d="M292 70 l8 8 M304 58 l-8 10" fill="none" stroke="#6F6A64" stroke-width="1.4" opacity="0.5"/>
+      <text x="228" y="122" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">not matching</text>
+    </g>
+  </g>
+
+  <g data-art="elsewhere">
+    <g transform="translate(48 70)">
+      <circle cx="28" cy="28" r="18" fill="none" stroke="#3D8B84" stroke-width="1.7"/>
+      <path d="M50 28 C 62 16, 62 40, 74 28" fill="none" stroke="#3D8B84" stroke-width="1.5"/>
+      <text x="8" y="62" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">radio</text>
+    </g>
+    <g transform="translate(148 70)">
+      <ellipse cx="28" cy="32" rx="16" ry="12" fill="none" stroke="#3D8B84" stroke-width="1.7"/>
+      <path d="M48 24 C 60 32, 60 40, 48 44" fill="none" stroke="#3D8B84" stroke-width="1.5"/>
+      <text x="8" y="62" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">voice</text>
+    </g>
+    <g class="SwingStill" transform="translate(248 58)">
+      <line x1="28" y1="8" x2="28" y2="48" stroke="#3D8B84" stroke-width="1.6"/>
+      <rect x="18" y="48" width="20" height="12" rx="3" fill="none" stroke="#3D8B84" stroke-width="1.5"/>
+      <text x="8" y="78" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">swing</text>
+    </g>
+  </g>
+</svg>

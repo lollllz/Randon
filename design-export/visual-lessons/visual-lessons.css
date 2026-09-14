@@ -1,0 +1,566 @@
+/* Randon visual-lesson tokens. Motion is opacity + transform only. */
+
+.vl-root {
+  --vl-cream: var(--color-paper, #f7f4ef);
+  --vl-white: var(--color-paper-0, #ffffff);
+  --vl-teal: var(--color-teal, #3d8b84);
+  --vl-teal-2: var(--color-teal-2, #32756f);
+  --vl-amber: var(--color-amber, #c9893a);
+  --vl-ink: var(--color-ink, #1c1917);
+  --vl-ink-soft: var(--color-ink-soft, #6f6a64);
+  --vl-line: var(--color-line, #e6e0d6);
+  --vl-gray: #c8c2ba;
+  --vl-on-teal: #ffffff;
+  --vl-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color: var(--vl-ink);
+  font-family: 'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.vl-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vl-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vl-teal) 12%, var(--vl-white));
+  color: var(--vl-teal);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.vl-chip-quiet {
+  background: var(--color-paper-2, #efeae3);
+  color: var(--vl-ink-soft);
+  font-weight: 500;
+}
+
+.vl-title {
+  margin: 12px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.vl-dek {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--vl-ink-soft);
+}
+
+.vl-art-button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: inherit;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.vl-art-button:focus-visible {
+  outline: 2px solid var(--vl-teal);
+  outline-offset: 3px;
+  border-radius: 16px;
+}
+
+.vl-art-button .vl-stage {
+  margin-top: 0;
+}
+
+.vl-hint {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--vl-ink-soft);
+}
+
+.vl-stage {
+  margin-top: 16px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--vl-white);
+  box-shadow: 0 1px 2px rgb(28 25 23 / 0.04), 0 10px 28px rgb(28 25 23 / 0.05);
+}
+
+.vl-stage svg,
+.vl-svg svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.vl-stage text,
+.vl-svg text {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--vl-ink-soft);
+}
+
+.vl-caption {
+  margin: 0;
+  padding: 10px 16px 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--vl-ink-soft);
+}
+
+/* Faraday / threat pattern: vertical step cards. */
+.vl-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vl-card {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--vl-line);
+  border-radius: 16px;
+  background: var(--vl-white);
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgb(28 25 23 / 0.04);
+}
+
+.vl-card-on {
+  border-color: var(--vl-teal);
+  box-shadow: 0 1px 2px rgb(28 25 23 / 0.04), 0 10px 28px rgb(28 25 23 / 0.05);
+  animation: vl-rise 240ms var(--vl-ease) both;
+}
+
+.vl-card:focus-visible {
+  outline: 2px solid var(--vl-teal);
+  outline-offset: 2px;
+}
+
+.vl-card:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.vl-card-index {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  border-radius: 999px;
+  background: var(--color-paper-2, #efeae3);
+  color: var(--vl-ink-soft);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.vl-card-on .vl-card-index {
+  background: var(--vl-teal);
+  color: var(--vl-on-teal);
+}
+
+.vl-card-copy {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vl-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.vl-card-body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--vl-ink);
+}
+
+.vl-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.vl-step {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--vl-line);
+  border-radius: 16px;
+  background: var(--vl-white);
+  color: var(--vl-ink-soft);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.vl-step-on {
+  border-color: var(--vl-teal);
+  background: var(--vl-white);
+  color: var(--vl-ink);
+  font-weight: 600;
+}
+
+.vl-step:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.vl-body {
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.vl-takeaway {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border-left: 3px solid var(--vl-teal);
+  background: var(--vl-white);
+  box-shadow: 0 1px 2px rgb(28 25 23 / 0.04), 0 10px 28px rgb(28 25 23 / 0.05);
+}
+
+.vl-takeaway p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.vl-takeaway-kicker {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vl-teal);
+}
+
+.vl-svg [data-reveal='1'],
+.vl-svg [data-reveal='2'] {
+  opacity: 0.28;
+}
+
+.vl-svg-step-1 [data-reveal='1'],
+.vl-svg-step-2 [data-reveal='1'],
+.vl-svg-step-2 [data-reveal='2'] {
+  opacity: 1;
+}
+
+.vl-svg-step-1 [data-reveal='1'],
+.vl-svg-step-2 [data-reveal='2'] {
+  animation: vl-rise 240ms var(--vl-ease) both;
+}
+
+.vl-svg-step-0 [data-only='1'] {
+  opacity: 0;
+}
+
+.vl-svg-step-1 [data-only='0'] {
+  opacity: 0;
+}
+
+.vl-svg-step-1 [data-only='1'] {
+  opacity: 1;
+}
+
+.vl-svg [data-art] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vl-svg-art-input [data-art='input'],
+.vl-svg-art-avalanche [data-art='avalanche'],
+.vl-svg-art-one-way [data-art='one-way'],
+.vl-svg-art-reuse [data-art='reuse'],
+.vl-svg-art-store [data-art='store'],
+.vl-svg-art-beat [data-art='beat'],
+.vl-svg-art-mismatch [data-art='mismatch'],
+.vl-svg-art-onbeat [data-art='onbeat'],
+.vl-svg-art-split [data-art='split'],
+.vl-svg-art-elsewhere [data-art='elsewhere'],
+.vl-svg-art-alone [data-art='alone'],
+.vl-svg-art-pair [data-art='pair'],
+.vl-svg-art-gray [data-art='gray'],
+.vl-svg-art-form [data-art='form'],
+.vl-svg-art-choice [data-art='choice'] {
+  opacity: 1;
+  pointer-events: auto;
+  animation: vl-rise 240ms var(--vl-ease) both;
+}
+
+.vl-svg-art-pair .vl-swatch-pair {
+  animation: vl-rise 240ms var(--vl-ease) both;
+}
+
+.vl-svg-art-one-way .vl-draw-arrow {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: vl-draw-x 720ms var(--vl-ease) both;
+}
+
+/* Static amber on the changed hash digit — no fill animation. */
+.vl-avalanche-digit {
+  fill: #c9893a;
+}
+
+/* P0: natural-beat hang does not sway. */
+.SwingStill,
+.vl-swing-still {
+  transform: none;
+  animation: none !important;
+}
+
+/* Pivot is the bar pin in viewBox space so a parented amber shove does not shift origin. */
+.vl-swing {
+  transform-box: view-box;
+}
+
+.vl-pivot-center {
+  transform-origin: 180px 28px;
+}
+
+.vl-pivot-left {
+  transform-origin: 120px 36px;
+}
+
+.vl-swing-wide {
+  animation: vl-pend-wide 2.4s ease-in-out infinite;
+}
+
+/* Amber shove lives on the seat and flashes only at the on-beat moment. */
+.vl-seat .vl-onbeat {
+  opacity: 0;
+  animation: vl-amber-flash 2.4s ease-in-out infinite;
+}
+
+.vl-layer-dim {
+  opacity: 0.28;
+}
+
+.vl-layer-on {
+  opacity: 1;
+  animation: vl-rise 240ms var(--vl-ease) both;
+}
+
+.vl-flame {
+  transform-origin: 180px 86px;
+  animation: vl-flame 2.6s ease-in-out infinite;
+}
+
+.vl-air {
+  animation: vl-air 3.2s var(--vl-ease) infinite;
+}
+
+.vl-air:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.vl-air:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.vl-body-continue {
+  animation: vl-slide 720ms var(--vl-ease) both;
+}
+
+.vl-tick {
+  animation: vl-drift 2.4s ease-in-out infinite;
+}
+
+@keyframes vl-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes vl-flame {
+  0%,
+  100% {
+    opacity: 0.88;
+    transform: scaleY(1) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.06) translateY(-2px);
+  }
+}
+
+@keyframes vl-air {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes vl-slide {
+  from {
+    opacity: 0.4;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(56px);
+  }
+}
+
+@keyframes vl-drift {
+  50% {
+    transform: translateX(4px);
+    opacity: 0.45;
+  }
+}
+
+@keyframes vl-draw-x {
+  from {
+    opacity: 0.4;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes vl-pend-wide {
+  0%,
+  100% {
+    transform: rotate(-18deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes vl-amber-flash {
+  0%,
+  42%,
+  60%,
+  100% {
+    opacity: 0;
+  }
+  48%,
+  54% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vl-card-on,
+  .vl-layer-on,
+  .vl-flame,
+  .vl-air,
+  .vl-body-continue,
+  .vl-tick,
+  .vl-svg-step-1 [data-reveal='1'],
+  .vl-svg-step-2 [data-reveal='2'],
+  .vl-svg [data-art],
+  .vl-swatch-pair,
+  .vl-draw-arrow,
+  .vl-swing-wide,
+  .vl-seat .vl-onbeat {
+    animation: none !important;
+  }
+
+  .vl-body-continue {
+    transform: translateX(56px);
+  }
+
+  .vl-draw-arrow {
+    transform: none;
+  }
+
+  .vl-swing-wide,
+  .vl-swing-still,
+  .SwingStill {
+    transform: none;
+  }
+
+  .vl-seat .vl-onbeat {
+    opacity: 1;
+  }
+}
+
+html[data-theme='dark'] .vl-root {
+  --vl-gray: #6a655e;
+  --vl-on-teal: #f2ede6;
+}
+
+html[data-theme='dark'] .vl-svg [fill='#F7F4EF'],
+html[data-theme='dark'] .vl-svg [fill='#f7f4ef'] {
+  fill: var(--color-paper);
+}
+
+html[data-theme='dark'] .vl-svg [fill='#FFFFFF'],
+html[data-theme='dark'] .vl-svg [fill='#ffffff'] {
+  fill: var(--color-paper-0);
+}
+
+html[data-theme='dark'] .vl-svg [fill='#6F6A64'],
+html[data-theme='dark'] .vl-svg [fill='#6f6a64'] {
+  fill: var(--color-ink-soft);
+}
+
+html[data-theme='dark'] .vl-svg [fill='#1C1917'],
+html[data-theme='dark'] .vl-svg [fill='#1c1917'],
+html[data-theme='dark'] .vl-svg [fill='#1A1814'] {
+  fill: var(--color-ink);
+}
+
+html[data-theme='dark'] .vl-svg [stroke='#1C1917'],
+html[data-theme='dark'] .vl-svg [stroke='#1c1917'],
+html[data-theme='dark'] .vl-svg [stroke='#1A1814'] {
+  stroke: var(--color-ink);
+}
+
+html[data-theme='dark'] .vl-svg [stroke='#E6E0D6'],
+html[data-theme='dark'] .vl-svg [stroke='#e6e0d6'] {
+  stroke: var(--color-line);
+}
+
+html[data-theme='dark'] .vl-svg [stroke='#F7F4EF'],
+html[data-theme='dark'] .vl-svg [stroke='#FFFFFF'] {
+  stroke: var(--color-paper);
+}
+
+html[data-theme='dark'] .vl-svg [fill='#C8C2BA'] {
+  fill: var(--vl-gray);
+}

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="vl-complements-title">
+  <title id="vl-complements-title">Teal and a muted amber wake each other up</title>
+  <rect width="360" height="220" fill="#F7F4EF"/>
+
+  <g data-art="alone">
+    <rect x="50" y="28" width="260" height="148" rx="16" fill="#3D8B84"/>
+  </g>
+
+  <g data-art="pair">
+    <rect x="28" y="28" width="148" height="148" rx="16" fill="#3D8B84"/>
+    <rect class="vl-swatch-pair" x="184" y="28" width="148" height="148" rx="16" fill="#C9893A"/>
+  </g>
+
+  <g data-art="gray">
+    <rect x="28" y="28" width="148" height="148" rx="16" fill="#3D8B84"/>
+    <rect x="62" y="62" width="80" height="80" rx="8" fill="#C8C2BA"/>
+    <rect x="184" y="28" width="148" height="148" rx="16" fill="#C9893A"/>
+    <rect x="218" y="62" width="80" height="80" rx="8" fill="#C8C2BA"/>
+  </g>
+
+  <g data-art="form">
+    <ellipse cx="180" cy="168" rx="86" ry="12" fill="#3D8B84" opacity="0.28"/>
+    <circle cx="180" cy="108" r="52" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.6"/>
+    <path d="M148 86 A 52 52 0 0 1 214 86" fill="none" stroke="#C9893A" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="204" cy="128" rx="22" ry="28" fill="#3D8B84" opacity="0.35"/>
+    <path d="M168 160 v28 h24 v-20" fill="none" stroke="#3D8B84" stroke-width="1.6" stroke-linejoin="round"/>
+  </g>
+
+  <g data-art="choice">
+    <rect x="18" y="24" width="156" height="156" rx="14" fill="#FFFFFF" stroke="#E6E0D6" stroke-width="1.4"/>
+    <ellipse cx="96" cy="148" rx="46" ry="8" fill="#3D8B84" opacity="0.2"/>
+    <circle cx="96" cy="96" r="32" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.6"/>
+    <path d="M88 128 v18 h16 v-12" fill="none" stroke="#3D8B84" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="76" y="198" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">quiet</text>
+    <rect x="186" y="24" width="156" height="156" rx="14" fill="#FFFFFF" stroke="#E6E0D6" stroke-width="1.4"/>
+    <ellipse cx="264" cy="148" rx="46" ry="8" fill="#3D8B84" opacity="0.28"/>
+    <circle cx="264" cy="96" r="32" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.6"/>
+    <path d="M236 78 A 32 32 0 0 1 292 78" fill="none" stroke="#C9893A" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="280" cy="110" rx="14" ry="18" fill="#3D8B84" opacity="0.35"/>
+    <path d="M256 128 v18 h16 v-12" fill="none" stroke="#3D8B84" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="244" y="198" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">awake</text>
+  </g>
+</svg>

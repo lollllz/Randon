@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="vl-candle-title">
+  <title id="vl-candle-title">Wax, wick, flame, and air around a candle</title>
+  <rect width="360" height="220" fill="#F7F4EF"/>
+
+  <g data-reveal="2">
+    <g class="vl-air">
+      <path d="M118 150 C 128 128, 136 110, 152 92" fill="none" stroke="#3D8B84" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M148 98 l4 -8 6 4" fill="none" stroke="#3D8B84" stroke-width="1.5"/>
+    </g>
+    <g class="vl-air">
+      <path d="M242 150 C 232 128, 224 110, 208 92" fill="none" stroke="#3D8B84" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M212 98 l-4 -8 -6 4" fill="none" stroke="#3D8B84" stroke-width="1.5"/>
+    </g>
+    <g class="vl-air">
+      <path d="M180 58 C 180 44, 186 32, 192 22" fill="none" stroke="#6F6A64" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 5"/>
+      <text x="198" y="28" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">quieter air up</text>
+    </g>
+    <text x="88" y="168" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">air in</text>
+    <text x="244" y="168" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">air in</text>
+  </g>
+
+  <g data-reveal="0">
+    <rect x="148" y="118" width="64" height="78" rx="10" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.7"/>
+    <ellipse cx="180" cy="118" rx="32" ry="8" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.4"/>
+    <text x="224" y="168" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">wax</text>
+    <path d="M216 160 L 208 152" fill="none" stroke="#6F6A64" stroke-width="1.2"/>
+  </g>
+
+  <g data-reveal="1">
+    <line x1="180" y1="118" x2="180" y2="78" stroke="#1C1917" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="194" y="104" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">wick</text>
+  </g>
+
+  <g data-reveal="2">
+    <path class="vl-flame" d="M180 86 C 168 70, 166 52, 180 36 C 194 52, 192 70, 180 86 Z" fill="none" stroke="#3D8B84" stroke-width="1.8"/>
+    <path class="vl-flame" d="M180 78 C 174 68, 174 58, 180 48 C 186 58, 186 68, 180 78 Z" fill="none" stroke="#3D8B84" stroke-width="1.2"/>
+    <text x="208" y="52" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">flame</text>
+  </g>
+</svg>

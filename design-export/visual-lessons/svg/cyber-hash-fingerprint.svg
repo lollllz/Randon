@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="vl-hash-title">
+  <title id="vl-hash-title">A fingerprint machine: secrets in, fixed-length prints out</title>
+  <rect width="360" height="220" fill="#F7F4EF"/>
+
+  <g data-art="input">
+    <rect x="28" y="78" width="88" height="44" rx="10" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6"/>
+    <text x="42" y="104" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">coffee1</text>
+    <path d="M124 100 H156" fill="none" stroke="#3D8B84" stroke-width="2" stroke-linecap="round"/>
+    <path d="M148 94 l8 6 -8 6" fill="none" stroke="#3D8B84" stroke-width="2"/>
+    <rect x="164" y="70" width="52" height="60" rx="12" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.7"/>
+    <text x="172" y="104" fill="#3D8B84" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">stamp</text>
+    <path d="M224 100 H252" fill="none" stroke="#3D8B84" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(260 82)">
+      <rect x="0" y="0" width="6" height="36" rx="2" fill="#3D8B84"/>
+      <rect x="10" y="0" width="12" height="36" rx="2" fill="#3D8B84"/>
+      <rect x="26" y="0" width="4" height="36" rx="2" fill="#3D8B84"/>
+      <rect x="34" y="0" width="10" height="36" rx="2" fill="#3D8B84"/>
+      <rect x="48" y="0" width="7" height="36" rx="2" fill="#3D8B84"/>
+      <rect x="59" y="0" width="9" height="36" rx="2" fill="#3D8B84"/>
+    </g>
+  </g>
+
+  <g data-art="avalanche">
+    <text x="36" y="58" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">coffee1</text>
+    <g transform="translate(140 40)">
+      <rect x="0" y="0" width="6" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="10" y="0" width="12" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="26" y="0" width="4" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="34" y="0" width="10" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="48" y="0" width="7" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="59" y="0" width="9" height="28" rx="2" fill="#3D8B84"/>
+    </g>
+    <text x="36" y="128" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">coffee<tspan class="vl-avalanche-digit" fill="#C9893A">2</tspan></text>
+    <g transform="translate(140 110)">
+      <rect x="0" y="0" width="11" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="15" y="0" width="5" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="24" y="0" width="13" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="41" y="0" width="3" height="28" rx="2" fill="#C9893A"/>
+      <rect x="48" y="0" width="8" height="28" rx="2" fill="#3D8B84"/>
+      <rect x="60" y="0" width="8" height="28" rx="2" fill="#3D8B84"/>
+    </g>
+  </g>
+
+  <g data-art="one-way">
+    <text x="48" y="72" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">secret</text>
+    <g class="vl-draw-arrow">
+      <path d="M96 66 H250" fill="none" stroke="#3D8B84" stroke-width="6" stroke-linecap="round"/>
+      <path d="M236 54 l18 12 -18 12" fill="none" stroke="#3D8B84" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="262" y="72" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">print</text>
+    <path d="M250 118 H110" fill="none" stroke="#E6E0D6" stroke-width="2.4" stroke-dasharray="5 6"/>
+    <path d="M168 108 l12 12 M180 108 l-12 12" stroke="#6F6A64" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <g data-art="reuse">
+    <path d="M48 88 L92 48 L136 88 V156 H48 Z" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M76 156 V118 a16 16 0 0 1 32 0 V156" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.5"/>
+    <g transform="translate(74 92)">
+      <rect x="0" y="0" width="4" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="6" y="0" width="8" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="16" y="0" width="3" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="21" y="0" width="7" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="30" y="0" width="5" height="10" rx="1" fill="#3D8B84"/>
+    </g>
+    <text x="62" y="176" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">a door</text>
+    <path d="M224 88 L268 48 L312 88 V156 H224 Z" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M252 156 V118 a16 16 0 0 1 32 0 V156" fill="#F7F4EF" stroke="#3D8B84" stroke-width="1.5"/>
+    <g transform="translate(250 92)">
+      <rect x="0" y="0" width="4" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="6" y="0" width="8" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="16" y="0" width="3" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="21" y="0" width="7" height="10" rx="1" fill="#3D8B84"/>
+      <rect x="30" y="0" width="5" height="10" rx="1" fill="#3D8B84"/>
+    </g>
+    <text x="232" y="176" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">another door</text>
+  </g>
+
+  <g data-art="store">
+    <rect x="48" y="46" width="160" height="120" rx="14" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.7"/>
+    <g transform="translate(68 70)">
+      <rect x="0" y="0" width="6" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="10" y="0" width="11" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="25" y="0" width="4" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="33" y="0" width="9" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="0" y="36" width="10" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="14" y="36" width="5" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="23" y="36" width="12" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="39" y="36" width="6" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="54" y="0" width="8" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="66" y="0" width="5" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="54" y="36" width="7" height="22" rx="1.5" fill="#3D8B84"/>
+      <rect x="65" y="36" width="10" height="22" rx="1.5" fill="#3D8B84"/>
+    </g>
+    <text x="68" y="148" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">prints on file</text>
+    <rect x="232" y="78" width="88" height="52" rx="10" fill="#FFFFFF" stroke="#3D8B84" stroke-width="1.6"/>
+    <text x="248" y="108" fill="#6F6A64" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">the phrase</text>
+  </g>
+</svg>
