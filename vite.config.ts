@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/Randon/',
   plugins: [
     react(),
     tailwindcss(),
@@ -19,8 +20,8 @@ export default defineConfig({
         theme_color: '#3D8B84',
         background_color: '#F7F4EF',
         display: 'standalone',
-        start_url: '/',
-        scope: '/',
+        start_url: '/Randon/',
+        scope: '/Randon/',
         lang: 'en',
         categories: ['education', 'lifestyle'],
         icons: [
@@ -46,7 +47,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2,json,txt}'],
-        navigateFallback: '/index.html',
+        navigateFallback: '/Randon/index.html',
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/www\.gutenberg\.org\/.*/i,
